@@ -6,29 +6,31 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 05:11:21 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/03/25 05:55:49 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/03/30 18:51:48 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
+
+
 class	Contact
 {
-	char	First_Name[10];
-	char	Last_Name[10];
-	char	Nickname[10];
-	char	Phone_Number[10];
-	char	Darkest_secret[10];
+	std::string	First_Name[10];
+	std::string	Last_Name[10];
+	std::string	Nickname[10];
+	std::string	Phone_Number[10];
+	std::string	Darkest_secret[10];
 };
 
 class   PhoneBook
 {
 	public:
-		Phonebook();
-		~Phonebook();
-		
-	int Contact;
-};
+		PhoneBook();
+		~PhoneBook();
 
-char	*PhoneBook::getContact(void) const
-{
-	
-}
+		void getContact(int index);
+		void setContact(std::string input);
+	private:
+		static int	pb_index;
+
+};

@@ -6,7 +6,7 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 20:28:10 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/03/25 05:44:41 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/03/30 18:57:40 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,11 @@
 
 int main(int argc, char **argv)
 {
-	PhoneBook istanza;
-	if (istanza.getContact(void) == "(null)")
-		std::cout << "Enter a contact to populate the PhoneBook: use ADD to start" << std::endl;
+	PhoneBook PhnBk;
+
+	
+
+
+//	if (istanza.getContact(void) == "(null)")
+//		std::cout << "Enter a contact to populate the PhoneBook: use ADD to start" << std::endl;
 }
