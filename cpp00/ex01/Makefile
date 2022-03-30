@@ -10,13 +10,14 @@ FLAGS = -Wall -Wextra -Werror
 
 CPP98 = -std=c++98
 
-SRCS = phonebook.cpp
+SRCS = phonebook.cpp\
+		Contact.class.cpp\
 
-OBJ = $(SRCS;.c=.o)
+OBJ = $(SRCS;.cpp=.o)
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(OBJ)
 	$(CC) $(FLAGS) $(SRCS) -o $(NAME) 
 
 cpp98 : $(FLAGS_98)

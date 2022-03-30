@@ -6,11 +6,14 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 05:11:21 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/03/30 18:51:48 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/03/30 23:36:24 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#ifndef CONTACT_CLASS_HPP
+# define CONTACT_CLASS_HPP
+# include <iostream>
+# include <iomanip>
 
 
 class	Contact
@@ -22,15 +25,4 @@ class	Contact
 	std::string	Darkest_secret[10];
 };
 
-class   PhoneBook
-{
-	public:
-		PhoneBook();
-		~PhoneBook();
-
-		void getContact(int index);
-		void setContact(std::string input);
-	private:
-		static int	pb_index;
-
-};
+#endif
