@@ -6,7 +6,7 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 05:11:21 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/03/31 18:42:09 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/03/31 18:55:36 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 class	Contact
 {
 	public:
-		std::string retFN(std::string str);
-		std::string retLN(std::string str);
-		std::string retNick(std::string str);
-		std::string retPN(std::string str);
-		std::string retDS(std::string str);
+		std::string retFN();
+		std::string retLN();
+		std::string retNick();
+		std::string retPN();
+		std::string retDS();
 
 		// std::string addFN(std::string cmd);
 		// std::string addPN(std::string cmd);

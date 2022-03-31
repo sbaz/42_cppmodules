@@ -6,7 +6,7 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 22:59:09 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/03/31 18:44:41 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/03/31 18:55:15 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 #include "Phonebook.class.hpp"
 
 
-std::string Contact::retFN		(std::string str)		{return Contact::First_Name;}
-std::string Contact::retLN		(std::string str)		{return Contact::Last_Name;}
-std::string Contact::retNick	(std::string str)		{return Contact::Nickname;}
-std::string Contact::retPN		(std::string str)		{return Contact::Phone_Number;}
-std::string Contact::retDS		(std::string str)		{return Contact::Darkest_secret;}
+std::string Contact::retFN()		{return Contact::First_Name;}
+std::string Contact::retLN()		{return Contact::Last_Name;}
+std::string Contact::retNick()		{return Contact::Nickname;}
+std::string Contact::retPN()		{return Contact::Phone_Number;}
+std::string Contact::retDS()		{return Contact::Darkest_secret;}
 
 
 // void	Contact::addContact(int index)

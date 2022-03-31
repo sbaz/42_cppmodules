@@ -1,37 +1,23 @@
 #   --Makefile--
 
-NAME = phonebook
-
-FLAGS_98 = phonebookcpp98
-
-CC = c++
-
-FLAGS = -Wall -Wextra -Werror
-
-CPP98 = -std=c++98
-
-SRCS = phonebook.cpp\
-		Contact.class.cpp\
-
-OBJ = $(SRCS;.cpp=.o)
+FLAGS	=	-Wall -Wextra -Werror
+NAME	=	phonebook
+CC		=	g++
+SRC		=	Phonebook.class.cpp \
+			phonebook.cpp \
+			Contact.class.cpp
+OBJ		=	$(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(FLAGS) $(SRCS) -o $(NAME) 
-
-cpp98 : $(FLAGS_98)
-
-$(FLAGS_98):
-	$(CC) $(FLAGS) $(CPP98) $(SRCS) -o $(FLAGS_98) 
-
+$(NAME):
+	$(CC) $(FLAGS) $(SRC) -o $@
 
 clean:
-	@rm -rf $(OBJ)
+	rm -fr $(OBJ)
 
-fclean: clean
-	@rm -rf $(NAME) $(FLAGS_98)
+fclean:
+	make clean
+	rm -fr $(NAME)
 
-re:	fclean all
-
-.PHONY: all clean fclean re
+re: fclean all
