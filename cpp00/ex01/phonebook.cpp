@@ -6,13 +6,14 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 20:28:10 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/03/31 00:26:58 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/03/31 16:37:53 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Phonebook.class.hpp"
 #include "Contact.class.hpp"
 #include "phonebook.hpp"
+#include <iomanip>
 
 int main()
 {
@@ -32,7 +33,7 @@ int main()
 		}
 		if(cmd.compare("ADD") == 0)
 		{
-			std::cout << "aggiungi un contatto" << std::endl;
+			std::cout << "Aggiungi un contatto:" << std::endl;
 		}
 	}
 
