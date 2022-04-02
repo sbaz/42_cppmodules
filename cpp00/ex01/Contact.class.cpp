@@ -6,13 +6,15 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 22:59:09 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/03/31 18:55:15 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/04/02 12:25:18 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.class.hpp"
 #include "Phonebook.class.hpp"
 
+Contact::Contact() {;}
+Contact::~Contact() {;}
 
 std::string Contact::retFN()		{return Contact::First_Name;}
 std::string Contact::retLN()		{return Contact::Last_Name;}
