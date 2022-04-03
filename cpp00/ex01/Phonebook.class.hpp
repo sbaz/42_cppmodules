@@ -6,7 +6,7 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 05:02:26 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/04/02 12:27:05 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/04/03 19:42:54 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,11 @@ class   PhoneBook
 		PhoneBook();
 		~PhoneBook();
 
-		void addContact(int index);
-		void getContact(int index);
+		void addContact();
+		void getFullContacts(int pb_index);
 		void init(void);
-	private:
-		static int	pb_index;
 		Contact	contacts[8];
+	private:
 
 };
 #endif

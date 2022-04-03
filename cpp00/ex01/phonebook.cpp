@@ -6,7 +6,7 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 20:28:10 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/03/31 19:01:36 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/04/03 20:03:15 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main()
 {
 	PhoneBook	PhnBk;
 	std::string	cmd;
+	static int	pb_index;
 	bool		loop;
 
 	loop = true;
@@ -33,10 +34,11 @@ int main()
 		if(cmd.compare("ADD") == 0)
 		{
 			std::cout << "Aggiungi un contatto:" << std::endl;
+			PhnBk.contacts[pb_index].addContact(pb_index);
 		}
 		if(cmd.compare("SEARCH") ==  0)
 		{
-			PhnBk.getContact();
+			PhnBk.getFullContacts(pb_index);
 		}
 	}
 

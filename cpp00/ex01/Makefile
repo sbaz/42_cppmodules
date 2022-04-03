@@ -1,6 +1,6 @@
 #   --Makefile--
 
-FLAGS	=	-Wall -Wextra -Werror
+FLAGS	=	#-Wall -Wextra -Werror
 NAME	=	phonebook
 CC		=	g++
 SRC		=	Phonebook.class.cpp \
@@ -10,7 +10,7 @@ OBJ		=	$(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(OBJ)
 	$(CC) $(FLAGS) $(SRC) -o $@
 
 clean:
