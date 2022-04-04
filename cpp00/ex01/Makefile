@@ -3,10 +3,10 @@
 FLAGS	=	#-Wall -Wextra -Werror
 NAME	=	phonebook
 CC		=	g++
-SRC		=	Phonebook.class.cpp \
-			phonebook.cpp \
+SRC		=	phonebook.cpp \
 			Contact.class.cpp
 OBJ		=	$(SRC:.cpp=.o)
+#Phonebook.class.cpp \
 
 all: $(NAME)
 

@@ -6,7 +6,7 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 05:11:21 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/04/03 20:15:47 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/04/04 22:47:02 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define CONTACT_CLASS_HPP
 # include <iostream>
 # include <iomanip>
+# include <string>
 
 
 class	Contact
@@ -22,7 +23,9 @@ class	Contact
 		Contact();
 		~Contact();
 
-		void	addContact(int pb_index);
+		void	addContact(int& pb_index);
+		int		getNumContacts(int& pb_index);		
+
 		std::string retFN();
 		std::string retLN();
 		std::string retNick();
@@ -35,7 +38,9 @@ class	Contact
 		std::string	Nickname;
 		std::string	Phone_Number;
 		std::string	Darkest_secret;
-		int contact_num[8];
+		int		 	contact_num[8];
+		void		retFullContact(int pb_index);
+		int			getNumContacts();
 };
 
 #endif
