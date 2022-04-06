@@ -6,25 +6,25 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 20:28:10 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/04/03 20:03:15 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/04/05 16:44:11 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Phonebook.class.hpp"
 #include "Contact.class.hpp"
-#include "phonebook.hpp"
-
 
 int main()
 {
 	PhoneBook	PhnBk;
 	std::string	cmd;
-	static int	pb_index;
 	bool		loop;
 
 	loop = true;
+	std::cout << "PHONEBOOK RUNNING" << std::endl;
 	while(loop == true)
 	{
+		int	pb_index;
+		std::cout << "> ";
 		std::getline(std::cin, cmd);
 		if(cmd.compare("EXIT") == 0)
 		{
@@ -33,8 +33,8 @@ int main()
 		}
 		if(cmd.compare("ADD") == 0)
 		{
-			std::cout << "Aggiungi un contatto:" << std::endl;
-			PhnBk.contacts[pb_index].addContact(pb_index);
+			std::cout << "Aggiungi un contatto:\n" << std::endl;
+			PhnBk.contacts[pb_index % 8].addContact(pb_index);
 		}
 		if(cmd.compare("SEARCH") ==  0)
 		{

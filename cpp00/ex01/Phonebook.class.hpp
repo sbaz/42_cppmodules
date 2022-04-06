@@ -6,7 +6,7 @@
 /*   By: pceccoli <pceccoli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 05:02:26 by pceccoli          #+#    #+#             */
-/*   Updated: 2022/04/03 19:42:54 by pceccoli         ###   ########.fr       */
+/*   Updated: 2022/04/04 23:45:20 by pceccoli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,12 @@ class   PhoneBook
 		~PhoneBook();
 
 		void addContact();
-		void getFullContacts(int pb_index);
+		void getFullContacts(int& pb_index);
 		void init(void);
 		Contact	contacts[8];
 	private:
+		std::string refined(std::string field);
+		void		getContactByIndex();
 
 };
 #endif
