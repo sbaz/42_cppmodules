@@ -11,7 +11,7 @@ D		= deps/
 NAME	= template
 
 # list of your source files
-SRCS	= main.cpp\
+SRCS	= main2.cpp\
 
 
 
